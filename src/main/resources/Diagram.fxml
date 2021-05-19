@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Diagram">
+   <children>
+      <PieChart fx:id="piechart" layoutX="14.0" layoutY="72.0" prefHeight="282.0" prefWidth="353.0" />
+      <TableView fx:id="tableview" layoutX="377.0" layoutY="128.0" prefHeight="144.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="column_range" prefWidth="59.0" text="ΔR, km" />
+          <TableColumn fx:id="column_number" prefWidth="68.0" text="N" />
+            <TableColumn fx:id="column_percent" prefWidth="69.0" text="\%" />
+        </columns>
+      </TableView>
+      <Label layoutX="99.0" layoutY="24.0" prefHeight="23.0" prefWidth="416.0" text="Percentage of the number of approximations">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="100.0" prefHeight="18.0" prefWidth="225.0" text="The number of approximations">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="119.0" layoutY="376.0" prefHeight="60.0" prefWidth="332.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="160.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="18.0" prefWidth="251.0" text="The number of object approaches:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="number_approaches" text="0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="number_objects" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="The number of space objects:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

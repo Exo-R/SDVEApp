@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ConvertTLE">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="471.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Click_close_program" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Click_help_program" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="188.0" layoutY="42.0" prefHeight="27.0" prefWidth="90.0" text="3LE to TLE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="185.0" layoutY="149.0" mnemonicParsing="false" onAction="#click_btn_load_file" prefHeight="39.0" prefWidth="102.0" text="Load file">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="185.0" layoutY="230.0" mnemonicParsing="false" onAction="#Click_btn_create" prefHeight="39.0" prefWidth="102.0" text="Save As...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_back_3" layoutX="95.0" layoutY="312.0" mnemonicParsing="false" onAction="#Click_btn_back_3" prefHeight="39.0" prefWidth="90.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_plot" layoutX="287.0" layoutY="312.0" mnemonicParsing="false" onAction="#Click_btn_convert" prefHeight="39.0" prefWidth="90.0" text="Convert">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="172.0" layoutY="121.0" prefHeight="20.0" prefWidth="132.0" text="Catalog of NORAD">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
