@@ -1,4 +1,3 @@
-![6ba6ac6d69afbce7e1eb](https://user-images.githubusercontent.com/84266445/118809468-dde0b200-b8d4-11eb-8430-51a6aba313c3.jpg)
 # SDVEApp
 Space Debris Visualization Application
 
