@@ -277,9 +277,8 @@ public class Other{
 
     public void OrekitData() throws Exception{
 
-        //File orekitData = new File("C:\\Users\\ex0r\\IdeaProjects\\Test\\out\\artifacts\\test_maven_1\\orekit-data"); // убрать это
-        String path_folder = new Other().PathFolder(); // восстановить
-        File orekitData = new File(path_folder + "orekit-data"); // восстановить
+        String path_folder = new Other().PathFolder(); // 
+        File orekitData = new File(path_folder + "orekit-data"); // 
 
         DataProvidersManager manager = DataProvidersManager.getInstance();
         manager.addProvider(new DirectoryCrawler(orekitData));
